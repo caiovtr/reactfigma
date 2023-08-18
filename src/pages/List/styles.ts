@@ -6,15 +6,40 @@ export const Section = styled.section`
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   img {
-    height: 25%;
-    width: 40%; 
+    height: 47%;
+    width: 52%; 
+    padding: 0.5rem;
   }
 
   p{
-    padding-left: 1rem;
     font-size: xx-large;
     color: ${colors.white};
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  @media (max-width: 810px){
+    flex-direction: column;
+    p{
+      font-size: large;
+    } 
+    img{
+      width: 51%;
+      height: 35%;
+    }
+  }
+  @media (max-width: 650px){
+    flex-direction: column;
+    p{
+      font-size: medium;
+    } 
+    img{
+      height: 20%;
+      width: 50%;
+    }
   }
 `

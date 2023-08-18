@@ -3,14 +3,11 @@ import { colors } from "../../styles/GlobalStyle"
 
 export const Header = styled.header`
   /* Cabeçalho */
-  border-bottom: 0.4rem solid ${colors.white};
   display: flex;
   height: 6rem;
   width:100%;
   background-color: ${colors.black};
   picture {
-    margin-left: 0.5rem;
-    padding: 0.5rem;
     img {
       height: 100%;
     }
@@ -29,7 +26,7 @@ export const NavBar = styled.nav`
     align-items: center;
     height: 100%;
     li {
-      padding: 1rem;
+      padding: 2.5rem;
       height: 100%;
       display: flex;
       align-items: center;
@@ -43,5 +40,4 @@ export const NavBar = styled.nav`
       background-color: ${colors.secondaryLight};
     }
   }
-
 `
